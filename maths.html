@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div style="text-align: center; margin-top: 50px;" > 
+     <label for="">Enter Number 1</label>
+     <input type="number" id="no1">
+      <br><br>
+     <label for="">Enter Number 2</label>
+     <input type="number" id="no2">
+     <br><br>
+     <div>
+     <button onclick="Add()">Add </button>
+     
+     <button onclick="Sub()" >Sub</button>
+     
+     <button onclick="Mul()">Mul</button>
+
+     <button onclick="Div()">Div</button>
+     </div>
+     <div>
+        <h2 id="cal"></h2>
+        <h2 id="cal2"></h2>
+        <h2 id="cal3"></h2>
+        <h2 id="cal4"></h2>
+
+
+     </div>
+
+     
+     <script>
+         function Add()
+         {
+             var ctrl=document.getElementById("no1");
+             var no=Number(ctrl.value);
+             var ctrl=document.getElementById("no2");
+             var no=Number(ctrl.value);
+             var add=no+no;
+             var Add=document.getElementById("cal");
+             Add.innerText="Addition is" +add;
+         }
+         function Sub()
+         {
+             var ctrl=document.getElementById("no1");
+             var no1= ctrl.value;
+             var ctrl=document.getElementById("no2");
+             var no2= ctrl.value;
+             var sub=no1-no2;
+             var cal2=document.getElementById("cal2");
+             cal2.innerText="Substraction is" +sub;
+         }
+         function Mul()
+         {
+             var ctrl=document.getElementById("no1");
+             var no1= ctrl.value;
+             var ctrl=document.getElementById("no2");
+             var no2= ctrl.value;
+             var mul=no1*no2;
+             var cal3=document.getElementById("cal3");
+             cal3.innerText="Multiplication is" +mul;
+         }
+         function Div()
+         {
+             var ctrl=document.getElementById("no1");
+             var no1= ctrl.value;
+             var ctrl=document.getElementById("no2");
+             var no2= ctrl.value;
+             var div=no1/no2;
+             var cal4=document.getElementById("cal4");
+             cal4.innerText="Division is" +div;
+         }
+        
+     </script>
+    
+</div>
+    </div> 
+     
+</body>
+</html>

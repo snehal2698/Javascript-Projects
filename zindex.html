@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img
+        {
+         position: absolute;
+         height: 300px;
+         width: 400px;
+         margin-top: 0;
+         margin-bottom: 0;
+        }
+        #img2
+        {
+          height: 300px;
+          z-index: 20px;
+          margin-left: 60px;
+          margin-top: 60px;
+          margin-bottom: 60px;
+
+        }
+   </style>
+</head>
+<body>
+    <div>
+        <img src="images/nature.jpg" alt="" id="img">
+        <img src="images/nature2.jpg" alt="" id="img2">
+
+        <button  id="btn1" onclick="fun1()">img1</button>
+        <button  id="btn2" onclick="fun2()">img2</button>
+    </div>
+
+    <script>
+          function fun1()
+          {
+              document.getElementById("img").style.zIndex=1;
+          }
+          function fun2()
+          {
+              document.getElementById("img").style.zIndex=-1;
+          }
+    </script>     
+          
+</body>
+</html>

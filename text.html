@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="from" id="from">
+        <input type="text" placeholder="to" id="to">
+        <button onclick="number()">Display</button>
+    </div>
+
+    <script>
+           function number()
+           {
+               var ctrl=document.getElementById("from")
+               var no1=ctrl.value;
+               var ctrl1=document.getElementById("to")
+               var no2=ctrl1.value;
+               
+               
+               while(no1<=no2)
+                 {
+                   document.write(no1+"<br>");
+                   no1++;
+                 }
+           }
+    </script>
+</body>
+</html>

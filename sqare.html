@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter number</label>
+    <input type="number" id="no">
+    <button onclick="square()">square</button>
+    <h2 id="square"></h2>
+    <script>
+        function square()
+        {
+            var ctrl= document.getElementById("no");
+            var no=ctrl.value;
+            var sqr=no*no;
+            var square=document.getElementById("square");
+            square.innerText="square is" +sqr;
+         
+        }
+    </script>
+</body>
+</html>
